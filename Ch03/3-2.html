@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3-2</title>
+    <style>
+        /*자식 선택자*/
+        .song > h3{
+            color: aqua;
+        }
+        section > .s1{
+        color: #910c0cad;
+        }
+        .song>.s2>em{
+            color: blueviolet;
+        }
+        /*후손선택자*/
+        .song strong{
+            color: rgb(138, 42, 66);
+        }
+    </style>
+</head>
+<body>
+    <h3>2.CSS 자식선택자</h3>
+
+    <section class="song">
+        <h3>애국가</h3>
+        <p class="s1">
+            동해물과 백두산이 마르고 닳도록<br/>
+            하느님이 보우하사 우리나라 만세<br/>
+            <em>
+                무궁화 산천리 화려강사<br/>
+                <strong>대한사람 </strong> 대한으로 길이 보전하세
+            </em>
+        </p>
+        <p class="s2">
+            남산위에 저소나무 철갑을 두른듯<br/>
+            하느님이 보우하사 우리나라 만세<br/>
+            <em>
+                무궁화 산천리 화려강사<br/>
+                <strong>대한사람</strong> 대한으로 길이 보전하세
+            </em>
+        </p>
+        
+
+    </section>
+</body>
+</html>
