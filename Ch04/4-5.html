@@ -100,6 +100,76 @@
         /*fixed는 자식태그와 위치 관계설정 적용안됨(부모자식 관계설정 적용이 안됨)*/
 
 
+        /*z-index 속성*/
+        .box1{
+            position: relative;
+            width : 200px;
+            height : 200px;
+            border : 1px solid black;
+        }
+        .box1>div{
+            position: absolute;
+            width : 100px;
+            height: 100px;
+            border : 1px solid black;
+            box-sizing: border-box;
+        }
+        .box1>div:nth-of-type(1){background: red; left:10px; top: 10px; z-index: 3;}
+        .box1>div:nth-of-type(2){background: green; left: 20px; top: 20px; z-index: 2;}
+        .box1>div:nth-of-type(3){background: blue; left: 30px; top: 30px; z-index: 1;}
+        /*z-index 값이 큰 순서대로 위로 올라온다.*/
+
+        /*부모 자식 위치관계 설정*/
+        .box2{
+            position: relative;
+            width: 400;
+            height: 300px;
+            border: 1px solid black;
+
+        }
+        .box2>div{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .box2>div>div{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: :border-box;
+        }
+        .box2>div>div:nth-of-type(1) {background-color: #f00; right: 10px; bottom: 10px;}
+        .box2>div>div:nth-of-type(2) {background-color: #0f0; right: 20px; bottom: 20px;}
+        .box2>div>div:nth-of-type(3) {background-color: #00f; right: 30px; bottom: 30px;}
+
+        /*overflow 속성 : 자식이 부모영역을 넘겼을 경우 처리하는 방법*/
+
+        .box3{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        .box3-1{overflow: visible;} /* 넘친대로 보여줘라*/
+        .box3-2{overflow: scroll;} /* 부모영역에서 스크롤로 보여줌*/
+        .box3-3{overflow: hidden;} /*넘친만큼 잘라 버림*/
+
+        .box3>div{
+            width: 100px;
+            height: 300px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .box3-1>div{background: #f00;}
+        .box3-2>div{background: #0f0;}
+        .box3-3>div{background: #00f;}
+
+        
+
     </style>
 </head>
 <body>
@@ -137,8 +207,31 @@
     </section>
     
     <h4>2)z-index 속성</h4>
+    <div class = "box1">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
     <h4>3)부모,자식 위치관계 설정</h4>
+    <div class = "box2">
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
     <h4>4)overflow 속성</h4>
+    <div class="box3 box3-1">
+        <div></div>
+    </div>
+    <div class="box3 box3-2">
+        <div></div>
+    </div>
+    <div class="box3 box3-3">
+        <div></div>
+    </div>
 
 </body>
 </html>
