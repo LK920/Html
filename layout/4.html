@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+        #wrapper{
+            width: 1000px;
+            height: auto;
+            border: 1px solid #CCc;
+            margin: 0 auto;
+            
+        }
+        header{
+            width: 100%;
+            height: 200px;
+            border: 1px solid #CCc;
+            box-sizing: border-box;
+            
+        }
+        section{
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+            
+        }
+        section>aside{
+            width: 125px;
+            height: 500px;
+            border: 1px dashed black;
+            box-sizing: border-box;
+        }
+        section>aside:nth-child(1){
+            float: left;
+        }
+        section>aside:nth-child(2){
+            float: left;
+        }
+        section>article{
+            float: right;
+            width: 750px;
+            height: 500px;
+            border: 1px dashed black;
+            box-sizing: border-box;
+        }
+        footer{}
+    </style>
+</head>
+<body>
+    <div id = wrapper>
+        <header>
+            <h2>머리말</h2>
+        </header>
+        <section>
+            <aside>
+                <h1>왼쪽1</h1>
+            </aside>
+            <aside>
+                <h2>왼쪽2</h2>
+            </aside>
+            <article>
+                <h4>본문</h4>
+            </article>
+        </section>
+        <footer>
+            <h1>사업자 번호</h1>
+        </footer>
+    </div>
+    
+</body>
+</html>
