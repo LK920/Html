@@ -27,7 +27,6 @@ body{}
         #user.login>form>table{}
         #user.login>form>table img {
             width: 20px;
-
         }
         #user.login>form>table input {
             width: 162px;
@@ -48,19 +47,16 @@ body{}
             background: #fdfdfd;
             color: black;
         }
-
         #user.login> .info{
             margin-bottom: 30px;
             padding: 20px;
             border: 1px solid #cfded8;
             background: #f5f6fa;
             overflow:hidden;
-
         }
         #user.login> .info>h3{}
         #user.login> .info>p{
             padding:10px 0 ;
-
         }
         #user.login> .info>a{
             float: right;
@@ -266,7 +262,7 @@ body{}
         bottom: 14px;
         right: 0;
     }
-/* 게사판-글보기 */
+/* 게시판-글보기 */
     #board.view > div{
         padding: 16px 0;
         text-align: right;
@@ -313,13 +309,13 @@ body{}
         text-align: right;
     }
     #board.view > .commentForm > form > div > input[type=submit]{}
-/* 게사판-글쓰기 */
+/* 게시판-글쓰기 */
     #board.write{}
     #board.write form>div{
         margin-top: 10px;
         text-align: right;
     }
-/* 게사판-글수정 */
+/* 게시판-글수정 */
     #board.modfiy{}
     #board.modify form>div{
         margin-top: 10px;
