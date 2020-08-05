@@ -20,10 +20,130 @@
     </script>
 
     <style>
-        
-      
+        /*베스트 상품*/
+        aside > .best{
+            width: 215px;
+            height: auto;
+            border: 1px solid #dbdbdb;
+            box-sizing: border-box;
+            box-shadow: 0 0 5px rgba(55, 55, 5, 0.2);
+        }
+        aside> .best > h1{
+            font-size: 14px;
+            font-weight: bold;
+            color: #111;
+            margin: 6px;
 
+        }
+        aside> .best > h1>i{
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        aside> .best > ol{
+            width: 100%;
+        }
+        aside> .best > ol>li{
+            width: 100%;
+            height: 100%;
+            padding: 0 6px;
+            box-sizing: border-box;
+            margin-bottom: 16px;
+        }
+        aside> .best > ol>li:first-child>a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        aside> .best > ol>li:first-child > a >.thumb{
+            position: relative;
+            float: none;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        aside> .best > ol>li:first-child > a >.thumb > i{
+            width: 35px;
+            height: 26px;
+        }
+        aside> .best > ol>li:first-child > a >.thumb> img{width: 100%;}
+        aside> .best > ol>li>a{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        aside> .best > ol > li > a > .dis_price >del{
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 10px;
+            color: #aaa;
+        }
+        aside> .best > ol > li > a > .dis_price >del::after{content: '원';}
+        aside> .best > ol > li > a > .dis_price >span::after{content: '↓';}
+        aside> .best > ol > li > a > .org_price >ins::after{content: '원';}
+        aside> .best > ol > li > a > .dis_price >span{
+            color: #eb000a;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-size: 10px;
+        }
+        aside> .best > ol > li > a > .thumb{
+            float: left;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        aside> .best > ol > li > a > .thumb > i{
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: inline-block;
+            width: 16px;
+            height: 20px;
+            font-size: 16px;
+            padding: 0;
+            color: #ef3e42;
+            border-bottom: 1px solid #ef3e42;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+            line-height: 18px;
+        }
+        aside> .best > ol>li > a >.thumb> img{
+            width: 100%;
+        }
+        aside> .best > ol>li>a h2{
+            margin-top: 4px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        ins{text-decoration: none;}
     </style>
+    <script>
+
+        $(function(){
+            var best = $('aside > .best');
+
+            $(window).scroll(function(){
+                var t = $(this).scrollTop();
+                console.log('t :'+t);
+                if(t>630){
+                    best.css({
+                        'position': 'fixed',
+                        'top':'0'
+                    })
+                }else{
+                    best.css({'position': 'static'})
+                }
+            });
+        });
+
+    </script>
 </head>
 <body>
     <div id = "wrapper">
@@ -68,6 +188,7 @@
         <main>
             <!--카테고리/베스트 상품 영역-->
             <aside>
+                <!--카테고리-->
                 <ul class="category">
                     <li><i class="fa fa-bars" aria-hidden="true"></i>카테고리</li>
                     <li>
@@ -110,9 +231,93 @@
 
 
                 </ul>
+                <!--베스트 상품-->
+                <article class="best">
+                    <h1><i class="fas fa-crown"></i>베스트 상품</h1>
+                    <ol>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>1</i>
+                                    <img src="./img/thumb-sample-t1.jpg" alt="t1"/>
+                                </div>
+                                <h2>TH-파스텔 드레스 셔츠</h2>
+                                <div class="dis_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="org_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>2</i>
+                                    <img src="./img/thumb-sample-t1.jpg" alt="t1"/>
+                                </div>
+                                <h2>TH-파스텔 드레스 셔츠</h2>
+                                <div class="dis_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="org_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>3</i>
+                                    <img src="./img/thumb-sample-t1.jpg" alt="t1"/>
+                                </div>
+                                <h2>TH-파스텔 드레스 셔츠</h2>
+                                <div class="dis_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="org_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>4</i>
+                                    <img src="./img/thumb-sample-t1.jpg" alt="t1"/>
+                                </div>
+                                <h2>TH-파스텔 드레스 셔츠</h2>
+                                <div class="dis_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="org_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <i>5</i>
+                                    <img src="./img/thumb-sample-t1.jpg" alt="t1"/>
+                                </div>
+                                <h2>TH-파스텔 드레스 셔츠</h2>
+                                <div class="dis_price">
+                                    <del>30,000</del>
+                                    <span>10%</span>
+                                </div>
+                                <div class="org_price">
+                                    <ins>27,000</ins>
+                                </div>
+                            </a>
+                        </li>
+                    </ol>
 
-
-
+                </article>
             </aside>
             <section>
                 <!--슬라이더 영역-->
