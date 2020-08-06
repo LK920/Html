@@ -122,12 +122,10 @@ header > .menu > div > ul > li:last-child > a{
 
 /*메인 영역*/
 main{
-
-    
+    position: relative;
     width: 1200px;
-    height: auto;
+    min-height: 1020px;
     margin: 0 auto;
-    
     overflow: hidden;
     
   
@@ -476,3 +474,13 @@ aside> .best > ol>li>a h2{
     overflow: hidden;
 }
 ins{text-decoration: none;}
+h5.rating{
+    width: 150px;
+    height: 20px;
+    font-size: 0px;
+    background-image: url(../img/ico_rating_star.png);
+    background-repeat: no-repeat;
+    background-position: 36px 0px;
+    text-indent: 86px;
+}
+h5.rating.star4{background-position: 0 -160px;}
