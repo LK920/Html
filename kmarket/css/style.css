@@ -17,16 +17,17 @@ header {
 header > div{
     width: 100%;
     box-sizing: border-box;
+    border-bottom: 1px, solid, #e9e9e9;
 }
 header > .top{
     height: 35px;
-    border-bottom: 1px, solid, #e9e9e9;
-}
+}    
 header > .top >div{
     width: 1200px;
     height: 100%;
     margin: 0 auto;
     text-align: right;
+    border-bottom:  1px solid #e9e9e9;
 }
 header > .top > div > a{
     display: inline-block;
