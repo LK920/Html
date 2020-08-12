@@ -10,112 +10,44 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/member.css">
     <style>
-    #member{
-        width: 1200px;
-        margin: 0 auto;
-        overflow: hidden;
-    }  
-    #member > .login{
-        width:900px;
-        margin: 71px auto 120px;
-    }  
-    #member > .login > img{}  
-    #member > .login > form{
-        width: 100%;
-        height: 220px;
-        padding : 60px 0 0 10px ;
-        margin-top: 10px;
-        border-top: 3px solid #0e6ad3;
-        border-bottom: 1px solid #e4e4e4;
-        box-sizing: border-box;
-    }
-    #member > .login > form>div{
-        float: left;
-        margin:0px 10px ;
-    }
-    #member > .login > form>div >label{
-        display: block;
-        margin-bottom: 6px;
-    }
-    #member > .login > form>div >label>span{
-        display: inline-block;
-        width: 60px;
-    }
-    #member > .login > form>div >label>input{
-        width: 200px;
-        height: 31px;
-        padding: 0 13px;
-        font-size: 12px;
-        font-weight: bold;
-        border: 1px solid #e3e3e3;
-        border-radius: 4px;
-        color: #0075d4 ;
-        box-shadow: inset 0 0 10px #eee;
-    }
-    #member > .login > form>div >label>span >img{}
-
-    #member > .login > form > input{
-        float: left;
-        width: 97px;
-        height: 71px;
-        background-image: url('../img/member_btn_login.gif');
-        font-size: 0;
-        border: none;
-    }
-    #member > .login > form > span{
-        clear: left;
-        display: block;
-        margin-top: 100px;
-        margin-left: 100px;
-    }
-    #member > .login > form > span > a{
-        display: inline-block;
-        padding: 0 15px;
-        height: 13px;
-        font-weight: bold;
-        border-right: 1px solid #999;
-        color: #676767;
-
-    }
-    #member > .login > form > span > a:last-child{border: 0;}
-
-    #member > .login > img[alt=배너로고]{
-        display: block;
-        margin: 36px auto;
-    }
     </style>
     
 </head>
 <body>
-    <div id = "wrapper">
-        <!--로그인 페이지-->
-        <div id="member">
-            <section class="login">
-                <img src="../img/member_txt_login.gif" alt="로그인">
-                <form action="#">
-                    <div>
-                        <label>
-                            <span><img src="../img/member_txt_id.gif" alt="아이디"></span>
-                            <input type="text" name="uid">
-                        </label>
-                        <label>
-                            <span><img src="../img/member_txt_pass.gif" alt="비밀번호"></span>
-                            <input type="text" name="pass">
-                        </label>
-                    </div>
-                    <input type="button" value="로그인">
-                    <span>
-                        <a href="#">아이디 찾기</a>
-                        <a href="#">비밀번호 찾기</a>
-                        <a href="#">회원가입</a>
-                    </span>
-                </form>
-                <img src="../img/member_certifi_logo.gif" alt="배너로고">
-            </section>
-
-        </div>
+    <div id = "member-wrapper">
+        <header>
+            <a href="#"><img src="../img/header_logo.png" alt=""></a>
+        </header>
+        <main>
+            <div id="member-login">
+                <section class="login">
+                    <img src="../img/member_txt_login.gif" alt="로그인">
+                    <form action="#">
+                        <div>
+                            <label>
+                                <span><img src="../img/member_txt_id.gif" alt="아이디"></span>
+                                <input type="text" name="uid">
+                            </label>
+                            <label>
+                                <span><img src="../img/member_txt_pass.gif" alt="비밀번호"></span>
+                                <input type="text" name="pass">
+                            </label>
+                        </div>
+                        <input type="button" value="로그인">
+                        <span>
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="#">회원가입</a>
+                        </span>
+                    </form>
+                    <img src="../img/member_certifi_logo.gif" alt="배너로고">
+                </section>
+    
+            </div>
+        </main>
+        
         <footer>
             <ul>
                 <li><a href="#">회사소개</a></li>
