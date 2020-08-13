@@ -296,6 +296,10 @@ footer > div > p > strong{
     vertical-align: middle;
     margin-right: 5px;
 }
+#member-register>.register table span{
+    font-size: 11px;
+    font-weight: bold;
+}
 #member-register>.register table td:nth-child(2){
     position: relative;
     vertical-align: middle;
