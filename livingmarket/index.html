@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>living-market:생활·가구</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script>
+        $(document).ready(function(){
+          $('.slider > ul').bxSlider({
+              pager:false
+          });
+        });
+    </script>
+    <style>
+        /*초기화*/
+        * {
+        margin: 0;
+        padding: 0;
+        font: normal 12px '돋움';
+        }
+        ul, ol {list-style: none;}
+        a {text-decoration: none; color: #111;}
+        #wrapper {
+            width: 100%;
+        }
+        /*헤더 영역*/
+
+        header{
+            width: 100%;
+            height: 197px;
+        }
+        header > div{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header > .top{
+            height: 34px;
+        }
+        header > .top > div{
+            height: 100%;
+            text-align: right;
+            margin: 0 auto;
+        }
+        header > .top > div > a{
+            height: 100%;
+            margin-bottom: 10px;
+            line-height: 35px;
+            border-left: 1px solid #e9e9e9;          
+            padding: 0 10px;
+            color: #646464;
+        }
+        header > .top >div > a:hover{
+            color: #35c5f0;
+            font-weight: bold
+        }
+        header > .logo{
+            height: 120px;
+        }
+        header > .logo > div {
+            position: relative;
+            height: 100%;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        header > .logo > div >a {
+            position: absolute;
+            left: 50%;
+            top: 45%;
+        }
+        header > .logo > div > form{
+            position: absolute;
+            right: 0;
+            bottom: 8px;
+            
+        }
+        header > .logo > div > form > input{
+            width: 180px;
+            height: 26px;
+            padding: 5px 50px 5px 10px;
+            border: 1px solid #f7f7f7;
+            border-radius: 30px;
+            background-color: #f7f7f7;
+            font-size: 15px;
+            color: #656565;
+        }
+        header > .logo > div > form > button{
+            position: absolute;
+            right: 5px;
+            bottom: 6px;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: #f7f7f7;
+        }
+
+        header > .menu{
+            position: relative;
+            width: 1200px;
+            margin: 0 auto;
+        }
+        header > .menu > .m_main{
+            
+            height: 44px;
+        }
+        header > .menu > .m_main >ul{
+            float: left;
+            width: 80%;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        header > .menu > .m_main >ul >li{
+            float: left;
+            width: 190px;
+            height: 100%;
+            padding: 10px 30px 0;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 22px;
+        }
+        header > .menu > .m_main > ul > li > a{
+            height: 100%;
+            font-size: 14px;
+            padding-bottom: 14px;
+        }
+        header > .menu > .m_main >ul > li > a:hover{
+            color: #35c5f0;
+            font-weight: bold;
+            border-bottom: 2px solid #35c5f0;
+        }
+        header > .menu > .m_main >ul > li > a>i{
+            margin-right: 3px;
+        }
+        /* 전체카테고리 열기*/
+        header > .menu > .m_main .category > a:hover + ol{display: block; }
+        header > .menu > .m_main .category > ol:focus{display: block;}
+        header > .menu > .m_main ol{
+            position: absolute;
+            left: 0;
+            top: 43px;
+            display: none;
+            width: 200px;
+            height: auto;
+            border: 1px solid #35c5f0 ;
+            background: #fff;
+            box-sizing: border-box;
+            z-index: 10000;
+            text-align: left;
+        }
+        header > .menu > .m_main ol > li{
+            height: 44px;
+            padding: 15px 0 0 40px;
+            box-sizing: border-box;
+            
+        }
+        header > .menu > .m_main ol > li >a{
+            font-size: 15px;
+        }
+        header > .menu > .m_main ol > li >a:hover{
+            font-weight: bold;
+            color : #35c5f0;
+            padding-bottom: 2px;
+            border-bottom: 1.8px solid #35c5f0;
+            box-sizing: border-box;
+        }
+        /*메인메뉴 - 인기 태그*/
+        header > .menu > .m_main > section{
+            float: right;
+            width: 20%;
+            height: 100%;
+            padding: 5px 0;
+            box-sizing: border-box;
+        }
+        header > .menu > .m_main > section > div {
+            height: 30px;
+            padding-top: 4px;
+            line-height: 22px;
+            text-align: center;
+            background-color: #f7f7f7;
+            border-radius: 30px;
+            box-sizing: border-box;
+            
+        }
+        header > .menu > .m_main > section > div > a{
+            color: #646464;
+            padding-right: 4px;
+        }
+
+        
+        section{
+            width: 1200px;
+            min-height: 1020px;
+            margin: 0 auto;
+        }
+        footer{}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="top">
+                <div>
+                    <a href="#">로그인</a>
+                    <a href="#">회원가입</a>
+                    <a href="#">주문배송</a>
+                    <a href="#">고객센터</a>
+                </div>
+            </div>
+            <div class="logo">
+                <div>
+                    <a href="#">
+                        <img src="" alt="logo">
+                    </a>
+                    <form action="#">
+                        <input type="text" name="search">
+                        <button><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="m_main">
+                    <ul>
+                        <li class="category">
+                            <a href="#"><i class="fa fa-bars" aria-hidden="true"></i>전체카테고리</a>
+                            <ol>
+                                <li>
+                                    <a href="#">
+                                        가구·패브릭
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        수납·정리
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        생활용품
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        가전
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        홈데코
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        주방
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        욕실
+                                    </a>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><a href="#">최신상품</a></li>
+                        <li><a href="#">베스트</a></li>
+                        <li><a href="#">특가상품</a></li>
+                        <li><a href="#">이벤트</a></li>
+                    </ul>
+                    <section>
+                        <div>
+                            <a href="#">#소파</a>
+                            <a href="#">#가구</a>
+                            <a href="#">#인테리어</a>
+                            <a href="#">#조명</a>
+                        </div>
+                    </section>
+                </div>
+                
+            </div>
+        </header>
+        <section>
+            <!--슬라이더 영역-->
+            <div class="slider">
+                <ul>
+                    <li><img src="./img/slider_banner_01.jpg" alt="slider_banner_01"></li>
+                    <li><img src="./img/slider_banner_02.jpg" alt="slider_banner_02"></li>
+                    <li><img src="./img/slider_banner_03.png" alt="slider_banner_03"></li>
+                    <li><img src="./img/slider_banner_04.jpg" alt="slider_banner_04"></li>
+                    <li><img src="./img/slider_banner_05.jpg" alt="slider_banner_05"></li>
+                </ul>
+            </div>
+            <!--추천상품 영역-->
+            <div class="recommend">
+                <div>
+                    <h4><a href="#">추천상품</a></h4>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--이벤트배너 영역-->
+            <div class="event">
+                <div>
+                    <a href="#"><img src="" alt="event_banner"></a>
+                </div>
+            </div>
+            <!--인기상품 영역-->
+            <div class="best">
+                <div>
+                    <h4><a href="#">베스트 상품 ></a></h4>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--특가상품 영역-->
+            <div class="discount">
+                <div>
+                    <h4><a href="#">특가 상품 ></a></h4>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <div>
+                                    <a href="#">[폴만]3인용 가죽소파</a>
+                                    <span>289,000원</span>
+                                    <span>315,500원</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--최신리뷰 영역-->
+            <div class="photo_review">
+                <div>
+                    <h4>최신 포토후기</h4>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="" alt="">
+                                </a>
+                                <p>너무너무 이쁘고 좋아요. 벌써 두번째 구매입니다.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용안내</a></li>
+            </ul>
+            <div>
+                <section>
+                    <h4>고객센터</h4>
+                    <div>
+                        <a href="#"><img src="" alt="kakaotalk"> 카카오톡 문의</a>
+                        <p>
+                            고객센터 운영시간 <br />
+                            평일 : 오전 9시 – 오후 8시<br />
+                            주말 및 공휴일 휴무<br />
+                        </p>
+                    </div>
+                    <div>
+                        <a href="#"><img src="" alt="qna"> 1:1 문의</a>
+                        <p>
+                            24시간 접수가능<br />
+                            고객센터 운영시간에 순차적으로 답변해드리겠습니다.<br />
+                        </p>
+                    </div>                    
+                </section>
+                <section>
+                    <h4>(주)리빙마켓</h4>
+                    <div>
+                        <a href="#"><img src="" alt="logo"></a>
+                        <p>
+                            부산시 강남구 테헤란로 152 (역삼동 강남파이낸스센터)<br />
+                            대표이사 : 강래구<br />
+                            사업자등록번호 : 220-81-83676 사업자정보확인<br />
+                            통신판매업신고 : 강남 10630호 Fax : 02-589-8842<br />
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#"><img src="" alt="insta_logo"></a></li>
+                            <li><a href="#"><img src="" alt="nblog_logo"></a></li>
+                            <li><a href="#"><img src="" alt="facebook_logo"></a></li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
