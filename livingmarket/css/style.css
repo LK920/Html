@@ -16,13 +16,15 @@
         height: 197px;
     }
     header > div{
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
     }
     header > .top{
+       
         height: 34px;
     }
     header > .top > div{
+        width: 1200px;
         height: 100%;
         text-align: right;
         margin: 0 auto;
@@ -44,6 +46,7 @@
     }
     header > .logo > div {
         position: relative;
+        width: 1200px;
         height: 100%;
         margin: 0 auto;
     }
@@ -87,13 +90,15 @@
     }
 
     header > .menu{
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
+        background: #f2f2f2;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;      
     }
     header > .menu > .m_main{
-        
+        position: relative;
+        width: 1200px;
         height: 44px;
+        margin: 0 auto;
     }
     header > .menu > .m_main >ul{
         float: left;
@@ -115,10 +120,12 @@
         font-size: 14px;
         padding-bottom: 14px;
     }
-    header > .menu > .m_main >ul > li > a:hover{
-        color: #35c5f0;
-        font-weight: bold;
+    header > .menu > .m_main >ul > li:hover{
         border-bottom: 2px solid #35c5f0;
+    }
+    header > .menu > .m_main >ul > li:hover>a{
+        font-weight: bold;
+        color: #35c5f0;
     }
     header > .menu > .m_main >ul > li > a>i{
         margin-right: 3px;
@@ -178,7 +185,123 @@
         padding-right: 4px;
     }
 
-    /*메인 영역*/
+         
+        /*메인 영역*/        
+        main{
+            width: 1200px;
+            min-height: 1020px;
+            margin: 0 auto;
+        }
+        main> section{
+            width: 100%;
+            min-height: 200px;
+        }
+        main>section>div{
+            overflow: hidden;
+        }
+        main> .slider{
+            width: 1200px;
+            height: 300px;
+            
+        }
+        main>section>div>h4{
+            width: unset;
+            padding: 30px 0 20px;
+            text-align: center;
+        }
+        main>section>div>h4>a:hover{
+            text-decoration: underline;
+        }
+        main>section>div>h4>a{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        main>section>div>article{
+            width: 100%;
+        }
+        main>section>div>article>ul{}
+        main>section>div>article>ul>li{
+            display: inline-block;
+            width: 250px;
+            height: 430px;
+            margin: 8px 20px 0;
+            text-align: right;
+        }
+        main>section>div>article>ul>li>a{}
+        main>section>div>article>ul>li>a>img{
+            width: 250px;
+            height: 300px;
+        }
+        main>section>div>article>ul>li>div{}
+        main>section>div>article>ul>li>div>a{
+            text-align:left;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 13px;
+        }
+        main>section>div>article>ul>li>div>span{
+            display: block;
+            padding-top: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        main>section>div>article>ul>li>div>del{
+            font-size: 12px; color: #aaa;
+        }
+        main> .event{
+            width: 100%;
+            height: 300px;
+            background-color: #eeeeee;
+        }
+        main> .event img{
+            width: 100%;
+            height: 230px;
+            margin: 35px 0;
+        }
+        main > .new_review li{
+            height: auto;
+        }
+        main > .new_review >div>article>ul>li>a>div{
+            overflow: hidden;
+            border-radius: 6px;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        main > .new_review >div>article>ul>li>a>div>img{
+            width: 100%;
+            height: 100%;
+        }
+        main > .new_review .review_name{
+            height: 65px;
+            padding: 5px 10px;
+        }
+        main > .new_review >div>article>ul>li>a>div>div{
+            font-size: 15px;
+            max-height: 38.5px;
+            font-weight: 700;
+            line-height: 1.3;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        main > .new_review >div>article>ul>li>a>div>div:nth-child(2){
+            display: block;
+            font-size: 13px;
+            padding-bottom: 5px;
+        }
+        main > .new_review >div>article>ul>li>a>div>div>img{
+            width: 22px;
+            height: 22px;
+            border-radius: 100%;
+            vertical-align: -5px;
+        }
+        main > .new_review >div>article>ul>li>a>div>div>span{
+            font-size: 11px;
+            color: #a8a8a8;
+        }
+        
 
 
 
