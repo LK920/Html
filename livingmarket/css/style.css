@@ -188,20 +188,22 @@
          
         /*메인 영역*/        
         main{
-            width: 1200px;
+            width: 100%;
             min-height: 1020px;
-            margin: 0 auto;
         }
         main> section{
             width: 100%;
             min-height: 200px;
         }
         main>section>div{
+            width: 1200px;
+            margin: 0 auto;
             overflow: hidden;
         }
         main> .slider{
             width: 1200px;
             height: 300px;
+            margin: 0 auto;
             
         }
         main>section>div>h4{
