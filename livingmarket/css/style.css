@@ -303,7 +303,33 @@
             font-size: 11px;
             color: #a8a8a8;
         }
-        
+
+        /*페이지*/
+        .paging{
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .paging >span >a{
+            color: rgb(119, 119, 119);
+            font-family: 돋움, Dotum, Tahoma, sans-serif;
+            font-size: 11px;
+            letter-spacing: -1px;
+        }
+        .paging > .num > a.on{color: red; font-weight: bold; }
+        .paging > .num >a{
+            display: inline-block;
+            min-width: 14px;
+            margin: 0 2px;
+            padding: 8px 9px;
+            border: 1px solid #c4c4c4;
+            background: url() 0 0 repeat-x;
+            color: #000;
+            font-family: Tahoma;
+            font-size: 12px;
+            text-align: center;
+            text-decoration: none;
+        }
 
 
 
