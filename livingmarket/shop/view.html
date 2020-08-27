@@ -16,66 +16,313 @@
         #view>div{
             width: 1200px;
             margin: 0 auto;
+            padding-top: 15px;
+            border: 1px solid red;
+            box-sizing: border-box;
         }
         
         /*네비영역*/
-        #view>div>nav{}
-        #view>div>nav>p{}
-        #view>div>nav>p>span{}
+        #view>div>nav{
+            widows: 100%;
+            height: 25px;
+            padding: 0 0 10px 5px;
+            box-sizing: border-box;
+        }
+        #view>div>nav>p{
+            box-sizing: border-box;
+        }
+        #view>div>nav>p>span{
+            font-size: 13px;
+            color: #a8a8a8;
+        }
+        #view>div>nav>p>span:last-child{
+            font-weight: bold;
+            color: #35c5f0;
+        }
         /*기본 상품 설명*/
-        #view>div>div{}
-        #view>div>div>div{}
-        #view>div>div>div> .cover_image{}
-        #view>div>div>div> .cover_image >div{}
-        #view>div>div>div> .cover_image >div>img{}
-        #view>div>div>div> .cover_image >ul{}
-        #view>div>div>div> .cover_image >ul>li{}
-        #view>div>div>div> .cover_image >ul>li>button{}
-        #view>div>div>div> .cover_image >ul>li>button>img{}
+        #view>div>div{
+            
+            margin: 20px 0;
+        }
+        #view>div>div>div{
+        }
+        #view .product_image{
+            float: left;
+            width: 618px;
+            height: 510px;
+        }
+        #view .cover_image >div{
+            float: right;
+            overflow: hidden;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        #view .cover_image >div>img{
+            width: 500px;
+            height: 500px;
+        }
+        #view .cover_image >ul{
+            float: left;
+            width: 70px;
+            height: auto;
+            display: block;
+            margin-left: 15px;
+        }
+        #view .cover_image >ul>li{
+            padding: 10px;
+        }
+        #view>div>div>div> .cover_image >ul>li>button{
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            border: none;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        #view>div>div>div> .cover_image >ul>li>button>img{
+            width: 100%;
+        }
 
-        #view>div> .explain_product{}
+        #view>div> .explain_product{
+            float: right;
+            width: 548px;
+            height: 510px;
+            padding: 0 10px 0 40px;
+            box-sizing: border-box;
+        }
         /*상품 설명의 헤드 영역*/
-        #view>div> .explain_product>div{}
-        #view>div> .explain_product>div>h1{}
-        #view>div> .explain_product>div>h1>span{}
-        #view>div> .explain_product>div>h1>a{}
-        #view>div> .explain_product>div>p{}
-        #view>div> .explain_product>div>p>a{}
-        #view>div> .explain_product>div>p>a>span{}
-        #view>div> .explain_product>div>p>a>span>i{}
-        #view>div> .explain_product>div>p>span{}
-        #view>div> .explain_product>div>p>span>span{}
+        #view .explain_product>div{}
+        #view .explain_product>div>h1{
+        }
+        #view .explain_product>div>h1>span{
+            margin: 3px 0 8px;
+            display: block;
+            font-size: 27px;
+            font-weight: bold;
+        }
+        #view .explain_product>div>h1>a{
+            font-size: 15px;
+            font-weight: 600;
+            color: #35c5f0;
+        }
+        #view .explain_product>div>p{
+        }
+        #view .explain_product>div>p>a{}
+        #view .explain_product>div>p>a>span{
+            font-size: 14px;
+            color: #35c5f0;
+            line-height: 25px;
+        }
+        #view .explain_product>div>p>a>span>i{
+            margin-right: 3px;
+        }
+        #view .explain_product>div>p>span{
+            font-size: 34px;
+            font-weight: bold;
+        }
+        #view .explain_product>div>p>span>span{
+            font-size: 45px;   
+            color: #35c5f0;
+            font-weight: 900;
+        }
         /*상품 설명의 상품 선택영역*/
-        #view>div> .explain_product>div>div{}
-        #view>div> .explain_product>div>div>div{}
-        #view>div> .explain_product>div>div>div>div{}
-        #view>div> .explain_product>div>div>div>div>button{}
-        #view>div> .explain_product>div>div>div>div>button>span{}
-        #view>div> .explain_product>div>div>div>div>button>img{}
+        #view .explain_product>div>div{
+            margin-top: 15px;
+            padding: 15px 0;
+            min-height: 2px;
+        }
+        #view .explain_product>div>div>div{
+            position: relative;
+        }
+        #view .explain_product>div>div>div>div{
+            
+            width: 100%;
+        }
+        #view .explain_product>div>div>div>div>button{
+            position: relative;
+            width: 100%;
+            height: 65px;
+            border: 1px solid #35c5f0;
+            border-radius: 15px;
+            background: #f9f9f9;
+            vertical-align: 5px;
+            cursor: pointer;
 
-        #view>div> .explain_product>div>div>div>div>ul{}
-        #view>div> .explain_product>div>div>div>div>ul>li{}
-        #view>div> .explain_product>div>div>div>div>ul>li>button{}
-        #view>div> .explain_product>div>div>div>div>ul>li>button>div{}
-        #view>div> .explain_product>div>div>div>div>ul>li>button>div>img{}
-        #view>div> .explain_product>div>div>div>div>ul>li>button>div>span{}
+        }
+        #view .explain_product>div>div>div>div>button>span{
+            position: absolute;
+            left: 10px;
+            top: 18px;
+            font-size: 25px;
+            font-weight: 700;
+            color: #909090;
+        }
+        #view .explain_product>div>div>div>div>button>img{
+            position: absolute;
+            right: 0;
+            top: 25px;
+            width: 15px;
+            height: 15px;
+            margin: 0 20px;
+        }
 
-        #view>div> .explain_product>div>div>div>p{}
-        #view>div> .explain_product>div>div>div>p>span{}
-        #view>div> .explain_product>div>div>button{}
+        #view .explain_product>div>div>div> .dropdown_list{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            display: none;
+        }
+        #view .explain_product>div>div>div>div>ul{}
+        #view .explain_product>div>div>div>div>ul>li{
+            margin-bottom: 4px;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button{
+            width: 100%;
+            height: 65px;
+            border: 1px solid #35c5f0;
+            border-radius: 15px;
+            background: #f9f9f9;
+            vertical-align: 5px;
+            cursor: pointer;
+            text-align: left;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div{
+            float: left;
+            display: block;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button> .index{
+            width: 55px;
+            height: 44px;
+            color: #737373;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 6px;
+            box-sizing: border-box;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div:nth-child(2){
+            width: 44px;
+            height: 44px;
+            overflow: hidden;
+            border-radius: 6px;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div>img{
+            width: 44px;
+            height: 44px;
+            border-radius: 6px;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div>span:first-child{
+            display: block;
+            height: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div>span{
+            display: inline-block;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div>span>span{
+            font-size: 15px;
+            font-weight: 700;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div>span>.discount_rate{
+            color: #35c5f0;
+        }
+        #view .explain_product>div>div>div>div>ul>li>button>div>span:last-child>span{
+            height: 20px;
+            font-size: 15px;
+            border-radius: 3px;
+            text-align: center;
+            color: #fff;
+            vertical-align: 1px;
+        }
+        #view .explain_product>div .free_d{
+            width: 50px;
+            background-color: rgb(255, 134, 86);
+        }
+        #view .explain_product>div .lower_p{
+            background-color: #9e9e9e;
+        }
+
+
+        #view .explain_product>div>div>p{
+            border-top: 1px solid #35c5f0;
+            margin-top: 15px;
+            padding-top: 5px;
+            text-align: right;
+        }
+        #view .explain_product>div>div>p>span{
+            
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #view .explain_product>div>div>p>span:last-child{
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        #view .explain_product>div>div>button{
+            width: 220px;
+            height: 60px;
+            cursor: pointer;
+            border: 1px solid #35c5f0;
+            border-radius: 6px;
+            box-sizing: border-box;
+            background-color: #fff;
+            font-size: 30px;
+            font-weight: bold;
+            color: #35c5f0;
+        }
+        #view .explain_product>div>div>button:last-child{
+            color: #fff;
+            background-color: #35c5f0;
+        }
         /*이벤트 배너*/
-        #view>div> .explain_product>div>a{}
-        #view>div> .explain_product>div>a>img{}
+        #view .explain_product>div:last-child{
+            margin-top: 30px;
+        }
+        #view .explain_product>div:last-child>a{
+            display: block;
+            width: 100%;
+        }
+        #view .explain_product>div>a>img{
+            width: 100%;
+            height: auto;
+        }
         /*상품 상세 페이지 카테고리*/
         #view> .product_cate{
             width: 100%;
+            background-color: #fafafa;
+            border-top: #ededed;
+            border-bottom: #ededed;
         }
         #view> .product_cate>div{
             width: 1200px;
             margin: 0 auto;
         }
         #view> .product_cate>div>ul{}
-        #view> .product_cate>div>ul>li{}
+        #view> .product_cate>div>ul>li{
+            float: left;
+            width: 20%;
+            height: 40px;
+            text-align: center;
+        }
+        #view> .product_cate>div>ul>li>a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding-top: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        #view> .product_cate>div>ul>li>a:hover{
+            color: #35c5f0;
+            border-bottom: 4px solid #35c5f0;
+            box-sizing: border-box;
+        }
         /*상품 상세 영역*/
         /*상품 이미지 설명*/
         #view> .view_detail > .view_detail_image{}
@@ -224,7 +471,22 @@
             },function(){
             $(this).children().eq(1).stop().slideUp(100); 
             });
+        });
+        $(function(){
+            var cate_bar = $('#view .product_cate');
 
+            $(window).scroll(function(){
+                var t = $(this).scrollTop();
+                console.log('t :'+t);
+                if(t>789){
+                    cate_bar.css({
+                        'position': 'fixed',
+                        'top':'0'
+                    })
+                }else{
+                    cate_bar.css({'position': 'static'})
+                }
+            });
         });
     </script>
 </head>
@@ -322,24 +584,21 @@
                             >
                             <span>가구·패브릭</span>
                             >
-                            <span><strong>책장</strong></span>
+                            <span>책장</span>
                         </p>
                     </nav>
-                    <div class="prduct_image">
+                    <div class="product_image">
                         <div>
-                            <div class="cover_imge">
+                            <div class="cover_image">
                                 <div>
-                                    <img src="" alt="main_image">
+                                    <img src="../img/view_item01.jpg" alt="main_image">
                                 </div>
                                 <ul>
-                                    <li><button><img src="" alt="pre_image_01"></button></li>
+                                    <li><button><img src="../img/view_item01.jpg" alt="pre_image_01"></button></li>
                                     <li><button><img src="" alt="pre_image_02"></button></li>
                                     <li><button><img src="" alt="pre_image_03"></button></li>
                                     <li><button><img src="" alt="pre_image_04"></button></li>
                                     <li><button><img src="" alt="pre_image_05"></button></li>
-                                    <li><button><img src="" alt="pre_image_06"></button></li>
-                                    <li><button><img src="" alt="pre_image_07"></button></li>
-                                    <li><button><img src="" alt="pre_image_08"></button></li>
                                 </ul>
                             </div>
                         </div>
@@ -352,14 +611,16 @@
                             </h1>
                             <p>
                                 <a href="#">
-                                    <span><i class="fas fa-star"></i>4.6</span>
+                                    <span>
+                                        <i class="fas fa-star"></i>4.6
+                                    </span>
                                     <span>1787개 리뷰</span>
                                 </a>
                             </p>
                             <p>
                                 <span>
                                     <span class="discount_rate">50%</span>
-                                    <span>16,800원 외</span>
+                                    16,800원 외
                                 </span>
                             </p>
                         </div>
@@ -367,62 +628,78 @@
                             <div>
                                 <div>
                                     <div>
-                                        <button>
+                                        <button type="button">
                                             <span>상품을 선택하세요.</span>
-                                            <img src="" alt="dropdown">
+                                            <img src="../img/icon_arrow_dow.png" alt="dropdown">
                                         </button>
                                     </div>
-                                    <div>
+                                    <div class="dropdown_list">
                                         <ul>
                                             <li>
                                                 <button>
-                                                    <div>1</div>
-                                                    <div><img src="" alt=""></div>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
                                                     <div>
                                                         <span>쿠키앤크림 일자책장 2단</span>
-                                                        <span class="discount_rate">50%</span>
-                                                        <span>16,800원 외</span>
-                                                        <span class="free_d">무료배송</span>
-                                                        <span class="lower_p">최저가</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
                                                     </div>
                                                 </button>
                                             </li>
                                             <li>
                                                 <button>
-                                                    <div>1</div>
-                                                    <div><img src="" alt=""></div>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
                                                     <div>
                                                         <span>쿠키앤크림 일자책장 2단</span>
-                                                        <span class="discount_rate">50%</span>
-                                                        <span>16,800원 외</span>
-                                                        <span class="free_d">무료배송</span>
-                                                        <span class="lower_p">최저가</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
                                                     </div>
                                                 </button>
                                             </li>
                                             <li>
                                                 <button>
-                                                    <div>1</div>
-                                                    <div><img src="" alt=""></div>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
                                                     <div>
                                                         <span>쿠키앤크림 일자책장 2단</span>
-                                                        <span class="discount_rate">50%</span>
-                                                        <span>16,800원 외</span>
-                                                        <span class="free_d">무료배송</span>
-                                                        <span class="lower_p">최저가</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
                                                     </div>
                                                 </button>
                                             </li>
                                             <li>
                                                 <button>
-                                                    <div>1</div>
-                                                    <div><img src="" alt=""></div>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
                                                     <div>
                                                         <span>쿠키앤크림 일자책장 2단</span>
-                                                        <span class="discount_rate">50%</span>
-                                                        <span>16,800원 외</span>
-                                                        <span class="free_d">무료배송</span>
-                                                        <span class="lower_p">최저가</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
                                                     </div>
                                                 </button>
                                             </li>
@@ -440,7 +717,7 @@
                             </div>
                         </div>
                         <div>
-                            <a href="#"><img src="" alt="이벤트 배너"></a>
+                            <a href="#"><img src="../img/vip_plcc_banner.png" alt="이벤트 배너"></a>
                         </div>
                     </div>
                 </div>
@@ -448,11 +725,11 @@
                 <div class="product_cate">
                     <div>
                         <ul>
-                            <li>상세정보</li>
-                            <li>리뷰</li>
-                            <li>문의</li>
-                            <li>배송/환불</li>
-                            <li>추천</li>
+                            <li><a href="">상세정보</a></li>
+                            <li><a href="">리뷰</a></li>
+                            <li><a href="">문의</a></li>
+                            <li><a href="">배송/환불</a></li>
+                            <li><a href="">추천</a></li>
                         </ul>
                     </div>
                 </div>
@@ -460,7 +737,7 @@
                 <div class="view_detail">
                     <!--상품 이미지/설명-->
                     <section class="view_detail_image">
-                        <img src="" alt="제품 이미지">
+                        <img src="../img/view_main_image.jpg" alt="제품 이미지">
                     </section>
                     <!--상품 리뷰-->
                     <section class="view_detail_review">
