@@ -17,7 +17,6 @@
             width: 1200px;
             margin: 0 auto;
             padding-top: 15px;
-            border: 1px solid red;
             box-sizing: border-box;
         }
         
@@ -41,7 +40,7 @@
         }
         /*기본 상품 설명*/
         #view>div>div{
-            
+            height: auto;
             margin: 20px 0;
         }
         #view>div>div>div{
@@ -87,7 +86,7 @@
         #view>div> .explain_product{
             float: right;
             width: 548px;
-            height: 510px;
+            height: auto;
             padding: 0 10px 0 40px;
             box-sizing: border-box;
         }
@@ -294,9 +293,10 @@
         /*상품 상세 페이지 카테고리*/
         #view> .product_cate{
             width: 100%;
-            background-color: #fafafa;
+            background-color: #c9c9c9;
             border-top: #ededed;
             border-bottom: #ededed;
+            z-index: 100;
         }
         #view> .product_cate>div{
             width: 1200px;
@@ -325,87 +325,233 @@
         }
         /*상품 상세 영역*/
         /*상품 이미지 설명*/
-        #view> .view_detail > .view_detail_image{}
-        #view> .view_detail > .view_detail_image >img{}
+        #view> .view_detail > .view_detail_image{
+            width: 100%;
+        }
+        #view> .view_detail > .view_detail_image >img{
+            width: 1200px;
+            padding: 0  20px;
+            box-sizing: border-box;
+        }
         /*상품 리뷰 + 문의 공통*/
-        #view> .view_detail >.view_detail_review{}
-        #view> .view_detail  .d_header{}
-        #view> .view_detail  .d_header>span{}
-        #view> .view_detail  .d_header>div{}
-        #view> .view_detail  .d_header>div>a{}
-        #view> .view_detail  .d_header>div>ul{}
-        #view> .view_detail  .d_header>div>ul>li{}
-        #view> .view_detail  .d_header>div>ul>li>a{}
+        #view> .view_detail >.view_detail_qna{
+            padding: 20px;
+            height: auto;
+            box-sizing: border-box;
+        }
+        #view> .view_detail >.view_detail_review{
+            padding: 20px;
+            height: auto;
+            box-sizing: border-box;
+        }
+        #view> .view_detail  .d_header{
+            position: relative;
+            height: 45px;
+        }
+        #view> .view_detail  .d_header>span{
+            position: absolute;
+            top: 13px;
+            left: 4px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #view> .view_detail  .d_header>div{
+            position: absolute;
+            top: 5px;
+            right: 6px;
+            vertical-align: middle;
+        }
+        #view> .view_detail  .d_header>div>select{
+            border: 2px solid #b9b9b9;
+            height: 37px;
+            font-size: 15px;
 
-        #view> .view_detail  .d_content{}
-        #view> .view_detail  .d_content>table{}
+        }
+        #view> .view_detail  .d_header>div>select>option{
+            height: 37px;
+            font-size: 15px;
+        }
+
+        #view> .view_detail  .d_content{
+            margin-top: 4px;
+            padding-top: 5px;
+            box-sizing: border-box;
+        }
+        #view> .view_detail  .d_content>table{
+            width: 100%;
+            height: 40px;
+            border-top: 4px solid #35c5f0;
+            text-align: center;
+        }
+
         #view> .view_detail  .d_content>table tr{}
-        #view> .view_detail  .d_content>table tr>td{}
+        #view> .view_detail>section>div .index {width: 80px;}
+        #view> .view_detail>section>div .score {width: 100px;}
+        #view> .view_detail>section>div .title {width: auto;}
+        #view> .view_detail>section>div .writer {width: 120px;}
+        #view> .view_detail>section>div .date {width:  200px;}
+        #view> .view_detail>section>div .count {width: 80px;}
+        #view> .view_detail  .d_content>table tr>td{
+            font-size: 20px;
+            font-weight: bold;
+        }
         #view> .view_detail  .d_content>div{}
-        #view> .view_detail  .d_content>div>table{}
-        #view> .view_detail  .d_content>div>table tr{}
-        #view> .view_detail  .d_content>div>table td{}
-        #view> .view_detail  .d_content>div>div{}
-        #view> .view_detail  .d_content>div>div>div{}
-        #view> .view_detail  .d_content>div>div>div>img{}
-        #view> .view_detail  .d_content>div>div>span{}
-        #view> .view_detail  .d_content>div>div>p{}
+        #view> .view_detail  .d_content>div>table{
+            width: 100%;
+            border-top: 1px solid #c9c9c9;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        
+        #view> .view_detail .d_content>div:last-child{
+            padding-bottom: 3px;
+            border-bottom: 4px solid #35c5f0;
+            margin-bottom: 10px;
+            
+        }
+        #view> .view_detail .d_content>div>table td{
+            padding: 10px 0;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 15px;
+        }
+        #view> .view_detail  .d_content>div>div{
+            width: 100%;
+            display: none;
+            padding: 20px 0 20px 60px;
+            box-sizing: border-box;
+        }
+        #view> .view_detail  .d_content>div>div>div{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: #a9a9a9;
+        }
+        #view> .view_detail  .d_content>div>div>div>img{
+            width: 100px;
+            height: 100px;
+        }
+        #view> .view_detail  .d_content>div>div>div:last-child{
+            width: 700px;
+            background-color: #fff;
+            padding: 5px 0 0 20px;
+            box-sizing: border-box;
+        }
+        #view> .view_detail  .d_content>div>div>div:last-child>span{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #view> .view_detail  .d_content>div>div>div:last-child>p{
+            font-size: 15px;
+        }
 
-        #view> .view_detail  .d_submit{}
-        #view> .view_detail  .d_submit>input{}
+        #view> .view_detail  .d_submit{
+            text-align: right;
+        }
+        #view> .view_detail  .d_submit>input{
+            width: 120px;
+            height: 43px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #35c5f0;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
         /*상품 배송/환불*/
-        #view> .view_detail> .view_detail_refund{}
-        #view> .view_detail> .view_detail_refund>div{}
-        #view> .view_detail> .view_detail_refund>div>h4{}
-        #view> .view_detail> .view_detail_refund>div>table{}
-        #view> .view_detail> .view_detail_refund>div>table tr{}
-        #view> .view_detail> .view_detail_refund>div>table td{}
+        #view> .view_detail> .view_detail_refund{
+            padding: 0  20px 20px 20px;
+        }
+        #view> .view_detail> .view_detail_refund>div{
+            width: 100%;
+        }
+        #view> .view_detail> .view_detail_refund>div>h4{
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px solid black;
+            padding-bottom: 3px;
+            margin-top: 15px;
+        }
+        #view> .view_detail> .view_detail_refund>div>table{
+            width: 100%;
+        }
+        #view> .view_detail> .view_detail_refund>div>table tr{
+            height: 15px;
+        }
+        #view> .view_detail> .view_detail_refund>div>table td:first-child{
+            width: 20%;
+        }
+        #view> .view_detail> .view_detail_refund>div>table td{
+            font-size: 16px;
+            font-weight: 400;
+            color: #888888;
+            padding: 5px 0 6px 21px;
+        }
 
-        #view> .view_detail> .view_detail_refund>div>h4{}
-        #view> .view_detail> .view_detail_refund>div>span{}
-        #view> .view_detail> .view_detail_refund>div>p{}
-        #view> .view_detail> .view_detail_refund>div>p>span{}
+        #view> .view_detail> .view_detail_refund>div{
+            line-height: 25px;
+        }
+        #view> .view_detail> .view_detail_refund>div>span{
+            color: #737373;
+            font-size: 12px;
+            padding-left: 12px;
+        }
+        #view> .view_detail> .view_detail_refund>div>p{
+            line-height: 20px;
+            padding-left: 10px;
+            color: #000;
+            background-color: #f9f9f9;
+        }
+        #view> .view_detail> .view_detail_refund>div>p>span{
+            color: #888888;
+        }
         
         /*상품 추천*/
-        #view .list_item{
+        #view .recommend_item{
+            width: 1200px;
+            margin: 0 auto ;
             padding: 0 17px;
             overflow: hidden;
         }
-        #view .list_item>div{}
-        #view .list_item>div>ul{}
-        #view .list_item>ul>li{
+        #view .recommend_item>div{}
+        #view .recommend_item>div>ul{}
+        #view .recommend_item>ul>li{
             float: left;
             width: 270px;
             height: 414px;
-            padding: 10px 30px 0 0;
+            padding: 10px 20px 0 0;
         }
-        #view .list_item>ul>li>div{
+        #view .recommend_item>ul>li>div{
             width: 100%;
             height: 100%;
             padding-bottom: 30px;
         }
-        #view .list_item>ul>li>div>.list_img{
+        #view .recommend_item>ul>li>div>.recommend_img{
             width: 100%;
             height: 270px;
             overflow: hidden;
             border-radius: 4px;
         }
-        #view .list_item>ul>li>div>.list_img img{
+        #view .recommend_item>ul>li>div>.recommend_img img{
             width: 100%;
             height: 100%;
         }
-        #view .list_content{
+        #view .recommend_content{
             width: 100%;
             height: 110px;
             box-sizing: border-box;
             padding: 0 10px;
         }
-        #view .list_content>h1{
+        #view .recommend_content>h1{
             margin-top: 9px;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-        #view .list_content>h1>span{
+        #view .recommend_content>h1>span{
             font-size: 13px;
             font-weight: 500;
             color: black;
@@ -414,18 +560,18 @@
             
 
         }
-        #view .list_content>span{
+        #view .recommend_content>span{
             margin-top: 3px;
             display: block;
             font-size: 17px;
             line-height: 23px;
             text-align: right;
         }
-        #view .list_content>span>span{
+        #view .recommend_content>span>span{
             font-size: 17px;
             font-weight: bold;
         }
-        #view .list_content>p{
+        #view .recommend_content>p{
             margin-top: 3px;
             font-size: 12px;
             color: #b6b6b6;
@@ -433,15 +579,15 @@
             font-weight: bold;
             text-align: right;
         }
-        #view .list_content>p>span{color: #000; font-weight: bold;}
-        #view .list_content>p>span>i{
+        #view .recommend_content>p>span{color: #000; font-weight: bold;}
+        #view .recommend_content>p>span>i{
             color: #35c5f0;
             margin-right: 2px;
         }
-        #view .list_content>span:last-child{
+        #view .recommend_content>span:last-child{
             margin-top: 3px;
         }
-        #view .list_content>span:last-child>span{
+        #view .recommend_content>span:last-child>span{
             display: inline-block;
             width: 45px;
             height: 20px;
@@ -451,12 +597,22 @@
             color: #fff;
             line-height: 20px;
         }
-        #view .list_content>span:last-child> .free_d{
+        #view .recommend_content>span:last-child> .free_d{
             width: 50px;
             background-color: rgb(255, 134, 86);
         }
-        #view .list_content>span:last-child> .lower_p{
+        #view .recommend_content>span:last-child> .lower_p{
             background-color: #9e9e9e;
+        }
+        #view .view_detail_recommend{}
+        #view .view_detail_recommend>div>h4{
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0;
+            background-color: #c9c9c9;
+            color: #fff;
+
         }
 
 
@@ -465,13 +621,20 @@
          $(function(){
 
         var cate = $('.m_main > ul > .category ');
+        var clk_table = $('#view> .view_detail  .d_content>div');
 
         cate.hover(function(){
             $(this).children().eq(1).stop().slideDown(100);
             },function(){
             $(this).children().eq(1).stop().slideUp(100); 
             });
+
+        clk_table.click(function(){
+            $(this).children().eq(1).css('display', 'block')
         });
+
+        });
+
         $(function(){
             var cate_bar = $('#view .product_cate');
 
@@ -706,6 +869,86 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div>
+                                    <div>
+                                        <button type="button">
+                                            <span>추가 상품을 선택하세요.</span>
+                                            <img src="../img/icon_arrow_dow.png" alt="dropdown">
+                                        </button>
+                                    </div>
+                                    <div class="dropdown_list">
+                                        <ul>
+                                            <li>
+                                                <button>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
+                                                    <div>
+                                                        <span>쿠키앤크림 일자책장 2단</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
+                                                    <div>
+                                                        <span>쿠키앤크림 일자책장 2단</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
+                                                    <div>
+                                                        <span>쿠키앤크림 일자책장 2단</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button>
+                                                    <div class="index">1</div>
+                                                    <div><img src="../img/no_images.png" alt=""></div>
+                                                    <div>
+                                                        <span>쿠키앤크림 일자책장 2단</span>
+                                                        <span>
+                                                            <span class="discount_rate">50%</span>
+                                                            <span>16,800원 외</span>
+                                                        </span>
+                                                        <span>
+                                                            <span class="free_d">무료배송</span>
+                                                            <span class="lower_p">최저가</span>
+                                                        </span>    
+                                                    </div>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                                 <p>
                                     <span>주문금액</span>
                                     <span>0원</span>
@@ -744,44 +987,238 @@
                         <div class="d_header">
                             <span>리뷰 10,024</span>
                             <div class="sort_list">
-                                <a href="#">추천순<i class="fas fa-arrow-up"></i></a>
-                                <ul>
-                                    <li><a href="#">추천순</a></li>
-                                    <li><a href="#">신상품순</a></li>
-                                    <li><a href="#">인기순</a></li>
-                                    <li><a href="#">낮은 가격순</a></li>
-                                    <li><a href="#">높은 가격순</a></li>
-                                </ul>
+                                <select>
+                                    <option value="1">최근 등록순</option>
+                                    <option value="2">조회순</option>
+                                    <option value="3">가장 오래된 순</option>
+                                </select>
                             </div>
                         </div>
                         <div class="d_content">
                             <table>
                                 <tr>
-                                    <td>번호</td>
-                                    <td>별점</td>
-                                    <td>제목</td>
-                                    <td>작성자</td>
-                                    <td>작성일</td>
-                                    <td>조회수</td>
+                                    <td class="index">번호</td>
+                                    <td class="score">별점</td>
+                                    <td class="title">제목</td>
+                                    <td class="writer">작성자</td>
+                                    <td class="date">작성일</td>
+                                    <td class="count">조회수</td>
                                 </tr>
                             </table>
                             <div>
                                 <table>
                                     <tr>
-                                        <td>1,024</td>
-                                        <td><i class="fas fa-star"></i></td>
-                                        <td>가성비 갑인듯</td>
-                                        <td>울란도르트</td>
-                                        <td>작성일</td>
-                                        <td>조회수</td>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
                                     </tr>
                                 </table>
                                 <div>
                                     <div>
                                         <img src="" alt="review_image">
                                     </div>
-                                    <span>가성비 갑인듯</span>
-                                    <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">1,024</td>
+                                        <td class="score"><i class="fas fa-star"></i>&nbsp;4.6</td>
+                                        <td class="title">가성비 갑인듯</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                        <td class="count">5</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <img src="" alt="review_image">
+                                    </div>
+                                    <div>
+                                        <span>가성비 갑인듯</span><br/>
+                                        
+                                        <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    </div>
+                                    
+                                    
                                 </div>
                             </div>
                         </div>
@@ -805,51 +1242,124 @@
                     <!--상품 문의-->
                     <section class="view_detail_qna">
                         <div class="d_header">
-                            <span>리뷰 10</span>
-                            <div>
-                                <span></span>
-                                <div class="sort_list">
-                                    <a href="#">추천순<i class="fas fa-arrow-up"></i></a>
-                                    <ul>
-                                        <li><a href="#">추천순</a></li>
-                                        <li><a href="#">신상품순</a></li>
-                                        <li><a href="#">인기순</a></li>
-                                        <li><a href="#">낮은 가격순</a></li>
-                                        <li><a href="#">높은 가격순</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <span>상품 문의 10</span>
                         </div>
                         <div class="d_content">
                             <table>
                                 <tr>
-                                    <td>번호</td>
-                                    <td>제목</td>
-                                    <td>작성자</td>
-                                    <td>작성일</td>
-                                    <td>조회수</td>
+                                    <td class="index">번호</td>
+                                    <td class="title">제목</td>
+                                    <td class="writer">작성자</td>
+                                    <td class="date">작성일</td>
                                 </tr>
                             </table>
                             <div>
                                 <table>
                                     <tr>
-                                        <td>10</td>
-                                        <td>언제 오나요?</td>
-                                        <td>울란도르트</td>
-                                        <td>작성일</td>
-                                        <td>조회수</td>
+                                        <td class="index">10</td>
+                                        <td class="title">배송 언제 출발하나요?</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
                                     </tr>
                                 </table>
                                 <div>
-                                    <span>언제 오나요</span>
-                                    <p>며칠 사용해 보니 내구성이 좋은거 같습니다. 단단하니 오래 사용할 수 있을 거 같아요.</p>
+                                    <div>
+                                        <span>배송 언제 출발하나요?</span><br/>
+                                        
+                                        <p>배송 언제 출발하나요? 주문한지 일주일 정도 지난거 같은데</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">10</td>
+                                        <td class="title">배송 언제 출발하나요?</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <span>배송 언제 출발하나요?</span><br/>
+                                        
+                                        <p>배송 언제 출발하나요? 주문한지 일주일 정도 지난거 같은데</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">10</td>
+                                        <td class="title">배송 언제 출발하나요?</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <span>배송 언제 출발하나요?</span><br/>
+                                        
+                                        <p>배송 언제 출발하나요? 주문한지 일주일 정도 지난거 같은데</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">10</td>
+                                        <td class="title">배송 언제 출발하나요?</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <span>배송 언제 출발하나요?</span><br/>
+                                        
+                                        <p>배송 언제 출발하나요? 주문한지 일주일 정도 지난거 같은데</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">10</td>
+                                        <td class="title">배송 언제 출발하나요?</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <span>배송 언제 출발하나요?</span><br/>
+                                        
+                                        <p>배송 언제 출발하나요? 주문한지 일주일 정도 지난거 같은데</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td class="index">10</td>
+                                        <td class="title">배송 언제 출발하나요?</td>
+                                        <td class="writer">울란도르트</td>
+                                        <td class="date">2020-08-20</td>
+                                    </tr>
+                                </table>
+                                <div>
+                                    <div>
+                                        <span>배송 언제 출발하나요?</span><br/>
+                                        
+                                        <p>배송 언제 출발하나요? 주문한지 일주일 정도 지난거 같은데</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="d_submit">
                             <input type="submit" value="상품 문의">
                         </div>
-                        <!--문의 페이지 번호-->
+                        <!--리뷰 페이지 번호-->
                         <div class="paging">
                             <span class="prev"><a href="#"> ◁&nbsp이전</a></span>
                             <span class="num">
@@ -929,209 +1439,113 @@
                             </p>
                         </div>
                     </section>
-                    <!--상품 추천-->
-                    <section>
-                        <div>
-                            <h4>추천상품</h4>
-                            <div class="list_item">
-                                <ul>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/pre_view_item01.jpg" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div>
-                                            <div class="list_img">
-                                                <a href="#">
-                                                    <img src="../img/no_images.png" alt="item01">
-                                                </a>
-                                            </div>
-                                            <div class="list_content">
-                                                <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
-                                                <span>
-                                                    <span class="discount_rate">50%</span>
-                                                    <span>16,800원 외</span>
-                                                </span>
-                                                <p>
-                                                    <span><i class="fas fa-star"></i>4.6</span>
-                                                    리뷰 10,142
-                                                </p>
-                                                <span>
-                                                    <span class="free_d">무료배송</span>
-                                                    <span class="lower_p">최저가</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
                 </div>
+                <!--상품 추천-->
+                <section class="view_detail_recommend">
+                    <div>
+                        <h4>추천상품</h4>
+                        <div class="recommend_item">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <div class="recommend_img">
+                                            <a href="#">
+                                                <img src="../img/pre_view_item01.jpg" alt="item01">
+                                            </a>
+                                        </div>
+                                        <div class="recommend_content">
+                                            <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
+                                            <span>
+                                                <span class="discount_rate">50%</span>
+                                                <span>16,800원 외</span>
+                                            </span>
+                                            <p>
+                                                <span><i class="fas fa-star"></i>4.6</span>
+                                                리뷰 10,142
+                                            </p>
+                                            <span>
+                                                <span class="free_d">무료배송</span>
+                                                <span class="lower_p">최저가</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="recommend_img">
+                                            <a href="#">
+                                                <img src="../img/no_images.png" alt="item01">
+                                            </a>
+                                        </div>
+                                        <div class="recommend_content">
+                                            <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
+                                            <span>
+                                                <span class="discount_rate">50%</span>
+                                                <span>16,800원 외</span>
+                                            </span>
+                                            <p>
+                                                <span><i class="fas fa-star"></i>4.6</span>
+                                                리뷰 10,142
+                                            </p>
+                                            <span>
+                                                <span class="free_d">무료배송</span>
+                                                <span class="lower_p">최저가</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="recommend_img">
+                                            <a href="#">
+                                                <img src="../img/no_images.png" alt="item01">
+                                            </a>
+                                        </div>
+                                        <div class="recommend_content">
+                                            <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
+                                            <span>
+                                                <span class="discount_rate">50%</span>
+                                                <span>16,800원 외</span>
+                                            </span>
+                                            <p>
+                                                <span><i class="fas fa-star"></i>4.6</span>
+                                                리뷰 10,142
+                                            </p>
+                                            <span>
+                                                <span class="free_d">무료배송</span>
+                                                <span class="lower_p">최저가</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <div class="recommend_img">
+                                            <a href="#">
+                                                <img src="../img/no_images.png" alt="item01">
+                                            </a>
+                                        </div>
+                                        <div class="recommend_content">
+                                            <h1><span>[오늘의딜]워터쉴드 방수 매트리스 커버</span></h1>
+                                            <span>
+                                                <span class="discount_rate">50%</span>
+                                                <span>16,800원 외</span>
+                                            </span>
+                                            <p>
+                                                <span><i class="fas fa-star"></i>4.6</span>
+                                                리뷰 10,142
+                                            </p>
+                                            <span>
+                                                <span class="free_d">무료배송</span>
+                                                <span class="lower_p">최저가</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </section>
         </main>
         <footer>
