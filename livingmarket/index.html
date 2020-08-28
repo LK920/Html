@@ -11,12 +11,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .bx-wrapper{
+            box-shadow: none;
+            border: none;
+            margin-top: 10px;
+        }   
+    </style>
     <script>
 
         $(document).ready(function(){
             $('.slider > ul').bxSlider({
-                slideWidth : 280,
                 pager:false
+                
             });
         });
 
