@@ -1,10 +1,10 @@
 /*index 슬라이더*/
 $(document).ready(function(){
     $('.slider > ul').bxSlider({
-        slideWidth : 280,
         pager:false
     });
 });
+
 /* index 전체보기 메뉴*/
 $(function(){
 

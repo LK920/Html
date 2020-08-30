@@ -236,7 +236,6 @@
         #order .order_tot_info>.payment>div>label>img{
             width: 80px;
             height: 20px;
-            border: 1px solid #c9c9c9;
         }
         /*결제금액*/
         #order .bottom{
@@ -246,30 +245,93 @@
             position: absolute;
             right: 0;
             top: 0;
-            width: 360px;
+            width: 300px;
             height: 412px;
             background: #fff;
             padding: 6px 20px;
         }
         #order .order_tot_info>.final_info>h3{
             font-weight: bold;
-            font-size: 30px;
+            font-size: 20px;
             padding-bottom: 10px;
             margin-bottom: 10px;
         }
         #order .order_tot_info>.final_info>div{
             width: 100%;
+            padding: 20px;
             border: 2px solid #c9c9c9;
             background-color: #fafafa;
+            box-sizing: border-box;
         }
         #order .order_tot_info>.final_info>ul{
             
         }
-        #order .order_tot_info>.final_info>ul>li{}
-        #order .order_tot_info>.final_info>ul>li>span{}
-
-        #order .order_tot_info>.final_info>input[type="submit"]{}
-
+        #order .order_tot_info>.final_info>div>ul>li:first-child{border-bottom: 1px solid #000;}
+        #order .order_tot_info>.final_info>div>ul>li:nth-child(2){color: #b7b7b7;}
+        #order .order_tot_info>.final_info>div>ul>li:nth-child(2)>span:first-child{padding-left: 5px;}
+        #order .order_tot_info>.final_info>div>ul>li:nth-child(3){color: #b7b7b7;}
+        #order .order_tot_info>.final_info>div>ul>li:nth-child(3)>span:first-child{padding-left: 5px;}
+        #order .order_tot_info>.final_info>div>ul>li>span{
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            line-height: 36px;
+        }
+        #order .order_tot_info>.final_info>div>ul>li>span:last-child{
+            float: right;
+            text-align: right;
+        }
+        #order .order_tot_info>.final_info>div>ul>li:nth-child(7){border-top: 1px solid #000;}
+        #order .order_tot_info>.final_info>div>ul>li:nth-child(7)>span:last-child{color: #35c5f0; font-size: 18px; font-weight: bold;}
+        #order .order_tot_info>.final_info>div>ul>li>p{text-align: right;}
+        #order .order_tot_info>.final_info>div>ul>li>p>span:first-child{
+            display: inline-block;
+            text-align: center;
+            width: 29px;
+            height: 14px;
+            padding: 3px 0;
+            padding-left: 2px;
+            border: 2px solid #fff;
+            border-radius: 16px;
+            background-color: #35c5f0;
+            font-size: 12px;
+            font-weight: bold;
+            color: #fff;
+        }
+        #order .order_tot_info>.final_info>div>ul>li>p>span:last-child{color: #b7b7b7;}
+        /*alert*/
+        #order .order_tot_info>.alert{
+            padding: 20px;
+        }
+        #order .order_tot_info>.alert>div{
+            padding: 10px;
+            background-color: #fafafa;
+        }
+        #order .order_tot_info>.alert>div>ul{}
+        #order .order_tot_info>.alert>div>ul>li{
+            font-size: 14px;
+            line-height: 24px;
+            color: #b1b1b1;
+        }
+        /*결제 버튼*/
+        #order .order_tot_info> .submit{
+            width: 100%;
+            height: 115px;
+            padding: 40px 0 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #order .order_tot_info>div>input[type="submit"]{
+            width: 250px;
+            height: 46px;
+            background-color: #35c5f0;
+            border: none;
+            border-radius: 16px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 3px;
+        }
     </style>
     <script>
     </script>
@@ -498,17 +560,17 @@
                                         <label>
                                             <span>토스</span>
                                             <input type="radio">
-                                            <img src="" alt="img_toss">
+                                            <img src="../img/toss_logo.png" alt="img_toss">
                                         </label>
                                         <label>
                                             <span>네이버페이</span>
                                             <input type="radio">
-                                            <img src="" alt="img_naverpay">
+                                            <img src="../img/logo_black.png" alt="img_naverpay">
                                         </label>
                                         <label>
                                             <span>Payco</span>
                                             <input type="radio">
-                                            <img src="" alt="img_payco">
+                                            <img src="../img/payco_log.png" alt="img_payco">
                                         </label>
                                         <label>
                                             <span>휴대폰</span>
@@ -517,7 +579,6 @@
                                         </label>
                                     </div>
                                 </article>
-                                
                                 <div class="final_info">
                                     <h3>결제금액</h3>
                                     <div>
@@ -553,7 +614,7 @@
                                             <li>
                                                 <p>
                                                     <span>적립</span>
-                                                    <span>450 원</span>
+                                                    <span>450원</span>
                                                 </p>
                                             </li>
                                         </ul>
@@ -568,7 +629,7 @@
                                         </ul>
                                     </div>
                                 </article>
-                                <div>
+                                <div class="submit">
                                     <input type="submit" value="결제하기">
                                 </div>
                             </section>
