@@ -189,7 +189,7 @@
         /*메인 영역*/        
         main{
             width: 100%;
-            min-height: 1020px;
+            min-height: 600px;
         }
         main> section{
             width: 100%;
@@ -213,6 +213,7 @@
         }
         main>section>div>h4>a:hover{
             text-decoration: underline;
+            color: #35c5f0;
         }
         main>section>div>h4>a{
             font-size: 28px;
