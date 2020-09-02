@@ -33,10 +33,13 @@
             padding: 0 20px;
             box-sizing: border-box;
         }
+        #order_complete>div>article:nth-of-type(1)>h3{border-bottom: none;}
         #order_complete>div>article>h3{
             font-size: 14px;
             font-weight: bold;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #ff9292;
+            margin-top: 20px;
         }
         /*상품정보*/
         #order_complete>div>article>table{
@@ -47,7 +50,9 @@
         #order_complete>div>article>table td{
             font-size: 15px;
             text-align: center;
-            padding: 7px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #c9c9c9;
+            box-sizing: border-box;
         }
         #order_complete>div>article>table td:nth-of-type(1){
             width: 140px;
@@ -71,7 +76,6 @@
             height: 100%;
         }
         #order_complete>div>article>table td>p{
-            border: 1px solid red;
             box-sizing: border-box;
             padding: 0 20px;
             text-align: left;
@@ -83,6 +87,7 @@
             font-size: 14px;
             font-weight: bold;
             padding-top: 5px;
+            margin-bottom: 7px;
         }
         #order_complete>div>article>table td>p>span:nth-child(3){
             display: inline-block;
@@ -94,12 +99,46 @@
             color: #c9c9c9;
         }
         /*결제정보, 주문정보, 배송정보*/
-        #order_complete>div>article>div{}
-        #order_complete>div>article>div>label{}
-        #order_complete>div>article>div>label>span{}
+        #order_complete>div>article>div{
+            box-sizing: border-box;
+            padding: 10px 0 20px 30px ;
+            border-bottom: 1px solid #c9c9c9;
+        }
+        
+        #order_complete>div>article>div>label{
+            display: block;
+            width: 100%;
+            
+        }
+        #order_complete>div>article>div>label>ins{
+            text-decoration: none;
+            display: inline-block;
+            width: 120px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+        #order_complete>div>article>div>label>span{
+            font-size: 16px;
+        }
         /*메인 이동*/
-        #order_complete>div>div{}
-        #order_complete>div>div>input{}
+        #order_complete>div>div{
+            text-align: center;
+            margin: 40px 0 20px 0;
+        }
+        #order_complete>div>div>input[type="button"]{
+            width: 250px;
+            height: 46px;
+            background-color: #35c5f0;
+            border: none;
+            border-radius: 16px;
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 3px;
+            cursor: pointer;
+
+        }
 
 
     </style>
@@ -223,18 +262,55 @@
                         </table>
                     </article>
                     <article>
+                        <h3>결제정보</h3>
+                        <div>
+                            <label>
+                                <ins>총 주문금액</ins>
+                                <span>68,950원</span>
+                            </label>
+                            <label>
+                                <ins>상품할인</ins>
+                                <span>0원</span>
+                            </label>
+                            <label>
+                                <ins>쿠폰할인</ins>
+                                <span>-1,000원</span>
+                            </label>
+                            <label>
+                                <ins>적립금 사용</ins>
+                                <span>-200P</span>
+                            </label>
+                            <label>
+                                <ins>배송비</ins>
+                                <span>33,000원</span>
+                            </label>
+                            <label>
+                                <ins>결제금액</ins>
+                                <span>100,000원</span>
+                            </label>
+                            <label>
+                                <ins>적립금액</ins>
+                                <span>1,000P</span>
+                            </label>
+                            <label>
+                                <ins>결제방법</ins>
+                                <span>네이버페이</span>
+                            </label>
+                        </div>
+                    </article>
+                    <article>
                         <h3>주문정보</h3>
                         <div>
                             <label>
-                                주문번호
+                                <ins>주문번호</ins>
                                 <span>111111111</span>
                             </label>
                             <label>
-                                주문자
+                                <ins>주문자</ins>
                                 <span>강래구</span>
                             </label>
                             <label>
-                                연락처
+                                <ins>연락처</ins>
                                 <span>010-1111-1111</span>
                             </label>
                         </div>
@@ -243,15 +319,15 @@
                         <h3>배송정보</h3>
                         <div>
                             <label>
-                                받는분
+                                <ins>받는분</ins>
                                 <span>강래구</span>
                             </label>
                             <label>
-                                연락처
+                                <ins>연락처</ins>
                                 <span>010-1111-1111</span>
                             </label>
                             <label>
-                                배송주소
+                                <ins>배송주소</ins>
                                 <span>부산광역시 수영구 마드리드로1번가길 4 303호</span>
                             </label>
                         </div>
