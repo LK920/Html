@@ -11,27 +11,91 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <style>
         #login{}
 
-        #login>div{}
+        #login>div{
+            padding: 105px 0 30px 0;
+        }
         #login>div>div{}
-        #login>div>div>h4{}
+        #login>div>div>h4{
+            text-align: center;
+            font-size: 44px;
+            letter-spacing: 0.5em;
+        }
 
         #login>div>form{}
-        #login>div>form>div{}
+        #login>div>form>div{
+            width: 400px;
+            margin: 0 auto;
 
-        #login>div>form>div>div{}
-        #login>div>form>div>div>input[type="text"]{}
+        }
 
-        #login>div>form>div>div>input[type="checkbox"]{}
-        #login>div>form>div>div>span{}
+        #login>div>form>div>div{
+            padding-top: 20px;
+            text-align: right;
+        }
+        #login>div>form>div>div>input[type="text"]{
+            display: block;
+            width: 400px;
+            height: 60px;
+            margin-bottom: 5px;
+            font-size: 20px;
+            background-color: #f6f6f6;
+            border: 1px solid #adadad;
+            border-radius: 10px;
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+
+        #login>div>form>div>div>input[type="checkbox"]{
+            width: 15px;
+            height: 15px;
+            vertical-align: text-top;
+        }
+        #login>div>form>div>div:nth-child(2){
+            text-align: left;
+            padding: 2px 4px;
+            box-sizing: border-box;
+            
+        }
+        #login>div>form>div>div>span:nth-child(3){
+            float: right;
+        }
         #login>div>form>div>div>span>a{}
 
-        #login>div>form>div>div>input[type="submit"]{}
-
-        #login>div>div>a{}
+        #login>div>form>div>div>input[type="submit"]{
+            width: 100%;
+            height: 60px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            color: #fff;
+            background-color: #35c5f0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #login>div>div:nth-child(3){
+            padding-top: 5px;
+        }
+        #login>div>div>a{
+            display: block;
+            width: 400px;
+            height: 60px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #35c5f0;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 4px;
+            border-radius: 10px;
+            color: #35c5f0;
+            box-sizing: border-box;
+            padding: 12px 0;
+        }
 
 
     </style>
@@ -138,7 +202,7 @@
                                 <span>보안접속</span>
                                 <span>
                                     <a href="#">아이디 찾기</a>
-                                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                                    &nbsp;|&nbsp;
                                     <a href="">비밀번호 찾기</a>
                                 </span>
                             </div>
