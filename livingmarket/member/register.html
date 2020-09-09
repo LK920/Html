@@ -48,6 +48,7 @@
             height: 50px;
             padding : 12px 0;
             box-sizing: border-box;
+            font-size: 20px;
             }
         #register>form>article>table tr>td>span{}
         #register>form>article>table tr>td>input[type="text"]{
@@ -90,11 +91,16 @@
             margin-left: 20px;
             padding-left: 20px;
         }
-        #register>form>article>table.sex>td{
-            margin-left: 20px;
+        #register>form>article>table .sex>td:nth-child(2){
+            padding: 5px 0;
         }
+        #register>form>article>table tr>td>label{
+            display: inline-block;
+            padding: 10px 0 10px 20px;
+            vertical-align: top;
+            font-size: 20px;
 
-        #register>form>article>table tr>td>label{}
+        }
 
         #register>form>article>table tr>td>div{}
         #register>form>article>table tr>td>div>input[type="text"]{}
@@ -206,7 +212,7 @@
                         <table border="0">
                             <tr>
                                 <td>
-                                    <span>아이디</span>
+                                    아이디
                                     <span class="essential">*</span>
                                 </td>
                                 <td>
@@ -292,6 +298,9 @@
                                 </td>
                             </tr>
                             <tr>
+                                <td>
+                                    생년월일
+                                </td>
                                 <td>
                                     <div>
                                         <input type="text" placeholder="YYYY">
