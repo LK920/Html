@@ -15,23 +15,84 @@
     <link rel="stylesheet" href="../css/style.css">
     <style>
         #register{}
-        #register>div{}
-        #register>div>h4{}
-        #register>div>p{}
+        #register>div{
+            width: 800px;
+        }
+        #register>div>h4{
+            padding-top: 80px;
+            font-size: 30px;
+        }
+        #register>div>p{
+            text-align: right;
+        }
         #register>div>p>span{}
 
-        #register>form{}
+        #register>form{
+            width: 800px;
+            margin: 0 auto;
+            border-top: 2px solid #35c5f0;
+            border-bottom: 2px solid #35c5f0;
+            box-sizing: border-box;
+            padding: 30px 0 30px 20px;
+        }
         #register>form>article{}
         #register>form>article>table{}
         #register>form>article>table tr{}
-        #register>form>article>table tr>td{}
+        #register>form>article>table tr>td{
+            vertical-align: top;
+            margin: 5px 0;
+        }
+        #register>form>article>table tr>td:nth-child(1){
+            display: inline-block;
+            width: 160px;
+            height: 50px;
+            padding : 12px 0;
+            box-sizing: border-box;
+            }
         #register>form>article>table tr>td>span{}
-        #register>form>article>table tr>td>input[type="text"]{}
-        #register>form>article>table tr>td>a{}
+        #register>form>article>table tr>td>input[type="text"]{
+            width: 335px;
+            height: 50px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            color: black;
+            border-radius: 10px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-left: 20px;
+            margin-right: 8px;
+        }
+        #register>form>article>table tr>td>a{
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            vertical-align: top;
+            border: 1px solid #35c5f0;
+            border-radius: 10px;
+            text-align: center;
+            color: #35c5f0;
+            font-weight: bold;
+            font-size: 23px;
+            line-height: 55px;
+            padding-left: 2px;
+            letter-spacing: 2px;
+
+        }
 
         #register>form>article>table .addr>td{}
-        #register>form>article>table .addr>td>div{}
-        #register>form>article>table .addr>td>div>input{}
+        #register>form>article>table .addr>td>div{
+        }
+        #register>form>article>table .addr>td>div>input{
+            height: 40px;
+            border-radius: 10px;
+            border:  1px solid #ccc;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        #register>form>article>table.sex>td{
+            margin-left: 20px;
+        }
 
         #register>form>article>table tr>td>label{}
 
@@ -42,6 +103,7 @@
         #register>form>div{}
         #register>form>div>input{}
 
+        span.essential{color: red;}
 
     </style>
     <script>
@@ -144,12 +206,12 @@
                         <table border="0">
                             <tr>
                                 <td>
-                                    아이디
+                                    <span>아이디</span>
                                     <span class="essential">*</span>
                                 </td>
                                 <td>
                                     <input type="text" placeholder="영문, 숫자로 4~12자까지 설정해 주세요.">
-                                    <a href="#">아이디 중복확인</a>
+                                    <a href="#">중복확인</a>
                                 </td>
                             </tr>
                             <tr>
@@ -170,10 +232,6 @@
                                     <input type="text" placeholder="비밀번호를 확인">
                                 </td>
                             </tr>
-                        </table>
-                    </article>
-                    <article>
-                        <table border="0">
                             <tr>
                                 
                                 <td>
@@ -191,7 +249,7 @@
                                 </td>
                                 <td>
                                     <input type="text" placeholder="이메일 입력">
-                                    <a href="#">이메일 중복확인</a>
+                                    <a href="#">중복확인</a>
                                 </td>
                             </tr>
                             <tr>
@@ -217,7 +275,7 @@
                                     </div>
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="sex">
                                 <td>
                                     성별
                                 </td>
