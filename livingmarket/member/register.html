@@ -31,11 +31,13 @@
             width: 800px;
             margin: 0 auto;
             border-top: 2px solid #35c5f0;
-            border-bottom: 2px solid #35c5f0;
             box-sizing: border-box;
             padding: 30px 0 30px 20px;
         }
-        #register>form>article{}
+        #register>form>article{
+            padding-bottom: 20px;
+            border-bottom: 1px solid #35c5f0;
+        }
         #register>form>article>table{}
         #register>form>article>table tr{}
         #register>form>article>table tr>td{
@@ -46,7 +48,7 @@
             display: inline-block;
             width: 160px;
             height: 50px;
-            padding : 12px 0;
+            padding-top : 5px;
             box-sizing: border-box;
             font-size: 20px;
             }
@@ -96,18 +98,54 @@
         }
         #register>form>article>table tr>td>label{
             display: inline-block;
-            padding: 10px 0 10px 20px;
+            padding: 0 0 10px 20px;
             vertical-align: top;
             font-size: 20px;
 
         }
 
-        #register>form>article>table tr>td>div{}
-        #register>form>article>table tr>td>div>input[type="text"]{}
-        #register>form>article>table tr>td>div>span{}
+        #register>form>article>table tr>td>.birth_day{
+            overflow: hidden;
+            width: 315px;
+            padding-left: 18px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-left: 20px;
+            text-align: center;
 
-        #register>form>div{}
-        #register>form>div>input{}
+        }
+        #register>form>article>table tr>td>.birth_day>input[type="text"]{
+            float: left;
+            width: 92px;
+            height: 50px;
+            border: 0;
+            text-align: center;
+            font-size: 23px;
+        }
+        #register>form>article>table tr>td>.birth_day>span{
+            float: left;
+            font-size: 23px;
+            color: #ccc;
+            line-height: 51px;
+            text-align: center;
+            }
+
+        #register>form>div{
+            padding: 40px;
+            text-align: center;
+        }
+        #register>form>div>input{
+            width: 250px;
+            height: 55px;
+            font-size: 30px;
+            border-radius: 10px;
+            border: none;
+            letter-spacing: 8px;
+            background-color: #35c5f0;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
 
         span.essential{color: red;}
 
@@ -302,7 +340,7 @@
                                     생년월일
                                 </td>
                                 <td>
-                                    <div>
+                                    <div class="birth_day">
                                         <input type="text" placeholder="YYYY">
                                         <span>/</span>
                                         <input type="text" placeholder="MM">
@@ -314,7 +352,9 @@
                             <tr>
                                 <td>
                                     추가입력사항
-                                    <input type="text" placeholder="추천입 입력">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="추천인 입력">
                                 </td>
                             </tr>
                         </table>
